@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+
+    a { color: hsl(228, 45%, 44%); 
+    }
+}
+
+//Colours
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 0%);
+$DarkGray: hsl(0, 0%, 55%);
+$VeryDarkGray: hsl(0, 0%, 41%);
+
+//Fonts
+$fontBody: 'Alata', sans-serif;
+$fontHeading: 'Josefin Sans', sans-serif;
+
+//General
+html {
+    font-size: 15px;
+    font-family: $fontBody;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $fontHeading;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 30px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+p {
+    line-height: 30px;
+}
+
+//Header
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: $White;
+
+    a {
+        color: $White;
+    }
+
+    .container {
+        padding: 60px 120px;
+    }
+
+    .logo {
+        display: inline;
+        width: 180px;
+        height: auto;
+        float: left;
+    }
+
+    h1 {
+        font-size: 3.3rem;
+        border: 2px solid $White;
+        padding: 25px;
+        width: 400px;
+        max-width: 80%;
+        margin-top: 160px;
+    }
+
+    ul {
+        float: right;
+    }
+}
+
+
+//Main
+
+main {
+    padding: 40px 150px;
+}
+
+//First section
+
+.section-one {
+    margin-top: 100px;
+    &__container {
+    }
+
+    &__img {
+        display: inline-block;
+        width: 800px;
+        max-width: 70%;
+        height: auto;
+    }
+
+    .text-container {
+        display: inline-block;
+        width: 450px;
+        max-width: 40%;
+        padding: 60px 0 0 60px;
+        background-color: $White;
+        margin-top: -90px;
+        margin-left: -145px;
+    }
+}
+
+.section-two__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.section-two__btn {
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    a {
+        text-decoration: none;
+        color: $VeryDarkGray;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.card {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+
+    h3 {
+        color: $White;
+        font-size: 2.3rem;
+        padding: 50px;
+        margin-top: 340px;
+    }
+}
+
+
+#card-one {
+    background-image: linear-gradient($VeryDarkGray, $VeryDarkGray), url(../images/desktop/image-deep-earth.jpg);
+}
+
+#card-two {
+    background-image: linear-gradient($VeryDarkGray, $VeryDarkGray), url(../images/desktop/image-night-arcade.jpg);  
+}
+
+#card-three {
+    background-image: linear-gradient($VeryDarkGray, $VeryDarkGray), url(../images/desktop/image-soccer-team.jpg);
+}
+
+#card-four {
+    background-image: linear-gradient($VeryDarkGray, $VeryDarkGray), url(../images/desktop/image-grid.jpg);  
+}
+
+#card-five {
+    background-image: linear-gradient($VeryDarkGray, $VeryDarkGray), url(../images/desktop/image-from-above.jpg); 
+}
+
+#card-six {
+    background-image: linear-gradient($VeryDarkGray, $VeryDarkGray), url(../images/desktop/image-pocket-borealis.jpg); 
+}
+
+#card-seven {
+    background-image: linear-gradient($VeryDarkGray, $VeryDarkGray), url(../images/desktop/image-curiosity.jpg);
+}
+
+#card-eight {
+    background-image: linear-gradient($VeryDarkGray, $VeryDarkGray), url(../images/desktop/image-fisheye.jpg);  
+}
+
+//Footer
+
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    color: $White;
+    padding: 40px 150px;
+
+    &-logo {
+        width: 50px;
+        float: left;
+    }
+
+    &-ul {
+        float: left;
+    }
+
+    &-li {
+        margin: 0px;
+    }
+
+    &-socials {
+        float: right;
+    }
+
+    p {
+        float: right;
+    }
+}
